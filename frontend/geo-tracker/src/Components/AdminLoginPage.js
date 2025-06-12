@@ -14,7 +14,7 @@ const AdminLoginPage = () => {
 
   const [message, setMessage] = useState("");
 
-  // Handle form input changes
+  // handle input changes form
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -59,7 +59,7 @@ const AdminLoginPage = () => {
       padding: "0", // Ensures no padding
       height: "100vh", // Full viewport height
       width: "100vw", // Full viewport width
-      backgroundImage: `url(${backgroundImage})`, // Applies the background image
+      backgroundImage: `url(${backgroundImage})`, 
       backgroundSize: "cover", // Ensures the image covers the entire area
       backgroundRepeat: "no-repeat", // Prevents image repetition
       backgroundPosition: "center", // Centers the image

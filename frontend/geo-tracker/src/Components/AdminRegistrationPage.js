@@ -3,9 +3,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import backgroundImage from './ExpanseImage.jpeg';
 
-
-
-
 const AdminRegistrationPage = () => {
 
     const navigate = useNavigate();

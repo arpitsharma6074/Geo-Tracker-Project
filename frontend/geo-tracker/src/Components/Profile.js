@@ -22,7 +22,7 @@ const Profile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8989/api/user/register", formData);
+      const response = await axios.post("http://localhost:8090/api/user/register", formData);
       setMessage(response.data.message);
       navigate("/login");
     } catch (error) {

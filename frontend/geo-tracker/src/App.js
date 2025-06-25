@@ -1,6 +1,8 @@
 import './App.css';
 import AppLayout from './Components/AppLayout';
 // import GeoTracker from './Components/GeoTracker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -9,3 +11,5 @@ function App() {
 }
 
 export default App;
+
+

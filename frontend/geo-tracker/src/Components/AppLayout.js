@@ -9,14 +9,22 @@ import GeoTracker from './GeoTracker';
 import UserLocation from "./UserLocation";
 import UserAttendance from "./UserAttendance";
 import AdminUpdateCollege from "./AdminUpdateCollege";
+import NavBar from "./Navbar";
+import LonginHomePage from "./Login/LonginHomePage";
+import SignUpHomePage from "./Signup/SignUpHomePage";
+import About from "./About/About";
+import Footer from "./Footer";
 
 const AppLayout = () => {
   return (
     <Router>
+      <NavBar />
       <Routes>
       <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<GeoTracker />} />
-
+        <Route path="/loginhomepage" element={<LonginHomePage />} />
+        <Route path="/signuphomepage" element={<SignUpHomePage />} />
+        <Route path="/about" element={<About />} />
         <Route path="/user/register" element={<RegistrationPage />} />
         <Route path="/admin/register" element={<AdminRegistrationPage />} />
 
@@ -29,6 +37,7 @@ const AppLayout = () => {
         <Route path="/admin/updatecollege" element={<AdminUpdateCollege />} />
 
       </Routes>
+      <Footer/>
     </Router>
   );
 };
